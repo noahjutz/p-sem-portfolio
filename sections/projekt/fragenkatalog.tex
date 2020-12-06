@@ -209,9 +209,15 @@ Der Fragenkatalog besteht aus folgenden Fragen:
 
 \begin{tikzpicture}
     \begin{axis}[
-        title={TITLE},
+        title={Welches Spiel hast du in Quarantäne am meißten gespielt?},
         symbolic x coords={
-            a
+            COD Mobile,
+            Fortnite,
+            GTA V,
+            LOL,
+            Minecraft,
+            Roblox,
+            Rocket League
         },
         ybar,
         ylabel={Antwortrate [\%]},
@@ -222,7 +228,13 @@ Der Fragenkatalog besteht aus folgenden Fragen:
         x tick label style={rotate=45,anchor=east},
     ]
         \addplot+[ybar] plot coordinates {
-            
+            (COD Mobile,5)
+            (Fortnite,21)
+            (GTA V,5)
+            (LOL,5)
+            (Minecraft,10)
+            (Roblox,5)
+            (Rocket League,5)
         };
     \end{axis}
 \end{tikzpicture}
