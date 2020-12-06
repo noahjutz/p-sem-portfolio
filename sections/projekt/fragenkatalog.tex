@@ -131,9 +131,11 @@ Der Fragenkatalog besteht aus folgenden Fragen:
 
 \begin{tikzpicture}
     \begin{axis}[
-        title={TITLE},
+        title={Warum diese Konsole?},
         symbolic x coords={
-            a
+            Tragbar,
+            Spielauswahl,
+            Vielseitigkeit
         },
         ybar,
         ylabel={Antwortrate [\%]},
@@ -144,7 +146,9 @@ Der Fragenkatalog besteht aus folgenden Fragen:
         x tick label style={rotate=45,anchor=east},
     ]
         \addplot+[ybar] plot coordinates {
-            
+            (Tragbar,10)
+            (Spielauswahl,10)
+            (Vielseitigkeit,15)
         };
     \end{axis}
 \end{tikzpicture}
