@@ -155,9 +155,15 @@ Der Fragenkatalog besteht aus folgenden Fragen:
 
 \begin{tikzpicture}
     \begin{axis}[
-        title={TITLE},
+        title={Lieblings Free-To-Play-Spiel},
         symbolic x coords={
-            a
+            Among Us,
+            COD Mobile,
+            Fortnite,
+            Paladins,
+            Roblox,
+            Rocket League,
+            The Wolf
         },
         ybar,
         ylabel={Antwortrate [\%]},
@@ -168,7 +174,13 @@ Der Fragenkatalog besteht aus folgenden Fragen:
         x tick label style={rotate=45,anchor=east},
     ]
         \addplot+[ybar] plot coordinates {
-            
+            (Among Us,15)
+            (COD Mobile,5)
+            (Fortnite,21)
+            (Paladins,5)
+            (Roblox,5)
+            (Rocket League,5)
+            (The Wolf,5)
         };
     \end{axis}
 \end{tikzpicture}
