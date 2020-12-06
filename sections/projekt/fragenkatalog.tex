@@ -103,9 +103,13 @@ Der Fragenkatalog besteht aus folgenden Fragen:
 
 \begin{tikzpicture}
     \begin{axis}[
-        title={TITLE},
+        title={Lieblingskonsole},
         symbolic x coords={
-            a
+            PC,
+            Playstation,
+            Xbox,
+            Switch,
+            Smartphone
         },
         ybar,
         ylabel={Antwortrate [\%]},
@@ -116,7 +120,11 @@ Der Fragenkatalog besteht aus folgenden Fragen:
         x tick label style={rotate=45,anchor=east},
     ]
         \addplot+[ybar] plot coordinates {
-            
+            (PC,32)
+            (Playstation,32)
+            (Xbox,5)
+            (Switch,5)
+            (Smartphone,26)
         };
     \end{axis}
 \end{tikzpicture}
