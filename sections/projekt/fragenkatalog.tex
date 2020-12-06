@@ -241,9 +241,10 @@ Der Fragenkatalog besteht aus folgenden Fragen:
 
 \begin{tikzpicture}
     \begin{axis}[
-        title={TITLE},
+        title={Hast du in Quarantäne mehr Single- oder Multiplayerspiele gespielt?},
         symbolic x coords={
-            a
+            Singleplayer,
+            Multiplayer
         },
         ybar,
         ylabel={Antwortrate [\%]},
@@ -254,7 +255,8 @@ Der Fragenkatalog besteht aus folgenden Fragen:
         x tick label style={rotate=45,anchor=east},
     ]
         \addplot+[ybar] plot coordinates {
-            
+            (Singleplayer,42)
+            (Multiplayer,58)
         };
     \end{axis}
 \end{tikzpicture}
