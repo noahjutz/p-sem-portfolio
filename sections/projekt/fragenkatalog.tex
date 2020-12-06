@@ -1,1 +1,32 @@
 \documentclass[../../main.tex]{subfiles}
+
+\begin{tikzpicture}
+    \begin{axis}[
+        title={Was ist dein Lieblings-Videospiel},
+        symbolic x coords={
+            test,
+            my,
+            name,
+            jeff,
+            my2,
+            name2,
+            jeff2,
+        },
+        ybar,
+        ylabel={Antwortrate [\%]},
+        width=\textwidth,
+        height=0.4\textheight,
+        xtick=data,
+        x tick label style={rotate=45,anchor=east},
+    ]
+        \addplot+[ybar] plot coordinates {
+            (test,99)
+            (my,22)
+            (name,12)
+            (jeff,5)
+            (name2,12)
+            (jeff2,5)
+            (my2,50)
+        };
+    \end{axis}
+\end{tikzpicture}
