@@ -15,14 +15,15 @@ Der Fragenkatalog besteht aus folgenden Fragen:
 
 \begin{tikzpicture}
     \begin{axis}[
-        title={TITLE},
+        title={Was ist dein lieblings-Videospiel},
         symbolic x coords={
-            my,
-            name,
-            jeff,
-            my2,
-            name2,
-            jeff2,
+            Among Us,
+            Fortnite,
+            COD BO4,
+            Detroit,
+            GTA V,
+            LOL,
+            Minecraft
         },
         ybar,
         ylabel={Antwortrate [\%]},
@@ -32,12 +33,13 @@ Der Fragenkatalog besteht aus folgenden Fragen:
         x tick label style={rotate=45,anchor=east},
     ]
         \addplot+[ybar] plot coordinates {
-            (my,22)
-            (name,12)
-            (jeff,5)
-            (name2,12)
-            (jeff2,5)
-            (my2,50)
+            (Among Us,10)
+            (Fortnite,16)
+            (COD BO4,5)
+            (Detroit,5)
+            (GTA V,5)
+            (LOL,5)
+            (Minecraft,15)
         };
     \end{axis}
 \end{tikzpicture}
