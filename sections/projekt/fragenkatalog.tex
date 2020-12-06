@@ -187,9 +187,10 @@ Der Fragenkatalog besteht aus folgenden Fragen:
 
 \begin{tikzpicture}
     \begin{axis}[
-        title={TITLE},
+        title={Lieber eigene Konsole mitnehmen (A) oder zur Verfügung gestellte (B) verwenden?},
         symbolic x coords={
-            a
+            A,
+            B
         },
         ybar,
         ylabel={Antwortrate [\%]},
@@ -200,7 +201,8 @@ Der Fragenkatalog besteht aus folgenden Fragen:
         x tick label style={rotate=45,anchor=east},
     ]
         \addplot+[ybar] plot coordinates {
-            
+            (A,74)
+            (B,26)
         };
     \end{axis}
 \end{tikzpicture}
