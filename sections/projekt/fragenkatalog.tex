@@ -67,9 +67,16 @@ Der Fragenkatalog besteht aus folgenden Fragen:
 
 \begin{tikzpicture}
     \begin{axis}[
-        title={TITLE},
+        title={Lieblingsgenre},
         symbolic x coords={
-            a
+            Action,
+            Adventure,
+            Role-Playing,
+            Simulation,
+            Strategie,
+            Sport,
+            Sandbox,
+            Party
         },
         ybar,
         ylabel={Antwortrate [\%]},
@@ -79,7 +86,14 @@ Der Fragenkatalog besteht aus folgenden Fragen:
         x tick label style={rotate=45,anchor=east},
     ]
         \addplot+[ybar] plot coordinates {
-            
+            (Action,42)
+            (Adventure,11)
+            (Role-Playing,5)
+            (Simulation,11)
+            (Strategie,11)
+            (Sport,11)
+            (Sandbox,11)
+            (Party,0)
         };
     \end{axis}
 \end{tikzpicture}
