@@ -43,3 +43,22 @@ Der Fragenkatalog besteht aus folgenden Fragen:
         };
     \end{axis}
 \end{tikzpicture}
+
+\begin{tikzpicture}
+    \begin{axis}[
+        title={},
+        symbolic x coords={
+            a
+        },
+        ybar,
+        ylabel={Antwortrate [\%]},
+        width=\textwidth,
+        height=0.4\textheight,
+        xtick=data,
+        x tick label style={rotate=45,anchor=east},
+    ]
+        \addplot+[ybar] plot coordinates {
+            
+        };
+    \end{axis}
+\end{tikzpicture}
