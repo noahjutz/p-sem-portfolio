@@ -263,9 +263,12 @@ Der Fragenkatalog besteht aus folgenden Fragen:
 
 \begin{tikzpicture}
     \begin{axis}[
-        title={TITLE},
+        title={Mir sind Videospiele sehr wichtig und ich verbringe meine Freizeit damit.},
         symbolic x coords={
-            a
+            Trifft sehr zu,
+            Trifft eher zu,
+            Trifft eher nicht zu,
+            Trifft nicht zu
         },
         ybar,
         ylabel={Antwortrate [\%]},
@@ -276,7 +279,10 @@ Der Fragenkatalog besteht aus folgenden Fragen:
         x tick label style={rotate=45,anchor=east},
     ]
         \addplot+[ybar] plot coordinates {
-            
+            (Trifft sehr zu,16)
+            (Trifft eher zu,37)
+            (Trifft eher nicht zu,37)
+            (Trifft nicht zu,11)
         };
     \end{axis}
 \end{tikzpicture}
