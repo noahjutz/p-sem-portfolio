@@ -26,7 +26,59 @@ Obwohl Minecraft ein Kostenpflichtiges Spiel ist, sehe ich es als wichtig, da es
 
 Vergleichen wir diese Spiele mit denen, die Umfrageteilnehmer in Quarantäne am meißten spielten, fallen keine besonderen Abweichungen auf.
 
-% DIAGRAMM VERGLEICH SPIELE NORMAL/QUARANT.
+\begin{tikzpicture}
+    \begin{axis}[
+        title={Was ist dein lieblings-Videospiel},
+        symbolic x coords={
+            Among Us,
+            Fortnite,
+            COD BO4,
+            Detroit,
+            GTA V,
+            LOL,
+            Minecraft,
+            COD Mobile,
+            Paladins,
+            Roblox,
+            Rocket League
+        },
+        ybar,
+        ylabel={Antwortrate [\%]},
+        width=\textwidth,
+        height=0.4\textheight,
+        ymin=0,
+        xtick=data,
+        x tick label style={rotate=45,anchor=east},
+    ]
+        \addplot+[ybar] plot coordinates {
+            (Among Us,10)
+            (Fortnite,16)
+            (COD BO4,5)
+            (Detroit,5)
+            (GTA V,5)
+            (LOL,5)
+            (Minecraft,15)
+            (COD Mobile,0)
+            (Paladins,0)
+            (Roblox,0)
+            (Rocket League,0)
+        };
+        \addplot+[ybar] plot coordinates {
+            (Among Us,15)
+            (Fortnite,21)
+            (COD BO4,0)
+            (Detroit,0)
+            (GTA V,0)
+            (LOL,0)
+            (Minecraft,0)
+            (COD Mobile,5)
+            (Paladins,5)
+            (Roblox,5)
+            (Rocket League,5)
+        };
+        \legend{Generell, Free-To-Play}
+    \end{axis}
+\end{tikzpicture}
 
 Die zweite Frage Bestätigt meine Annahme, dass weitaus mehr Menschen lieber Multi- statt Singleplayerspiele spielen. Deshalb ist es umso wichtiger, eine gute Internetverbindung anzubieten. Um die Verzögerung zu minimieren, ist eine Kabellose Verbindung zur Konsole zu vermeiden. Trotzdem muss man die Bedürfnisse der Spieler, die Singleplayer bevorzugen, berücksichtigen, und daher Singleplayer-Spiele wie Minecraft anbieten. Das ist wichtig, weil Personen laut Umfrage in Quarantäne deutlich mehr Singleplayer-Spiele spielen.
 
