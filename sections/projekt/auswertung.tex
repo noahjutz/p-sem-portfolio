@@ -28,7 +28,7 @@ Obwohl Minecraft ein Kostenpflichtiges Spiel ist, sehe ich es als wichtig, da es
 
 Vergleichen wir diese Spiele mit denen, die Umfrageteilnehmer in Quarantäne am meißten spielten, fallen keine besonderen Abweichungen auf (Abb. \ref{fig:vergleich_quarantaene_spiele}).
 
-\begin{figure}
+\begin{figure}[ht]
     \begin{tikzpicture}
         \begin{axis}[
             title={Was ist dein lieblings-Videospiel},
@@ -86,36 +86,40 @@ Vergleichen wir diese Spiele mit denen, die Umfrageteilnehmer in Quarantäne am 
     \label{fig:vergleich_quarantaene_spiele}
 \end{figure}
 
-Die zweite Frage Bestätigt meine Annahme, dass weitaus mehr Menschen lieber Multi- statt Singleplayerspiele spielen. Deshalb ist es umso wichtiger, eine gute Internetverbindung anzubieten. Um die Verzögerung zu minimieren, ist eine Kabellose Verbindung zur Konsole zu vermeiden. Trotzdem muss man die Bedürfnisse der Spieler, die Singleplayer bevorzugen, berücksichtigen, und daher Singleplayer-Spiele wie Minecraft anbieten. Das ist wichtig, weil Personen laut Umfrage in Quarantäne deutlich mehr Singleplayer-Spiele spielen.
+Die zweite Frage Bestätigt meine Annahme, dass weitaus mehr Menschen lieber Multi- statt Singleplayerspiele spielen. Deshalb ist es umso wichtiger, eine gute Internetverbindung anzubieten. Um die Verzögerung zu minimieren, ist eine Kabellose Verbindung zur Konsole zu vermeiden. Trotzdem muss man die Bedürfnisse der Spieler, die Singleplayer bevorzugen, berücksichtigen, und daher Singleplayer-Spiele wie Minecraft anbieten. Das ist wichtig, weil Personen laut Umfrage in Quarantäne deutlich mehr Singleplayer-Spiele spielen (Abb. \ref{fig:vergleich_q_singlemulti}).
 
-\begin{tikzpicture}
-    \begin{axis}[
-        title={Lieber Single- oder Multiplayer?},
-        symbolic x coords={
-            Singleplayer,
-            Multiplayer
-        },
-        ybar,
-        ylabel={Antwortrate [\%]},
-        width=\textwidth,
-        height=0.4\textheight,
-        ymin=0,
-        xtick=data,
-        x tick label style={rotate=45,anchor=east},
-        legend style={at={(0.5,-0.1)},
-        anchor=north,legend columns=-1},
-    ]
-        \addplot+[ybar] plot coordinates {
-            (Singleplayer,26)
-            (Multiplayer,74)
-        };
-        \addplot+[ybar] plot coordinates {
-            (Singleplayer,42)
-            (Multiplayer,58)
-        };
-        \legend{Normal, In Quarantäne}
-    \end{axis}
-\end{tikzpicture}
+\begin{figure}[ht]
+    \begin{tikzpicture}
+        \begin{axis}[
+            title={Lieber Single- oder Multiplayer?},
+            symbolic x coords={
+                Singleplayer,
+                Multiplayer
+            },
+            ybar,
+            ylabel={Antwortrate [\%]},
+            width=\textwidth,
+            height=0.4\textheight,
+            ymin=0,
+            xtick=data,
+            x tick label style={rotate=45,anchor=east},
+            legend style={at={(0.5,-0.1)},
+            anchor=north,legend columns=-1},
+        ]
+            \addplot+[ybar] plot coordinates {
+                (Singleplayer,26)
+                (Multiplayer,74)
+            };
+            \addplot+[ybar] plot coordinates {
+                (Singleplayer,42)
+                (Multiplayer,58)
+            };
+            \legend{Normal, In Quarantäne}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Vergleich beider Umfrage-Fragen}
+    \label{fig:vergleich_q_singlemulti}
+\end{figure}
 
 Bezüglich der Frage zum Lieblingsgenre ist vorwegzunehmen, dass Minecraft ein Sandbox-Game und Fortnite ein Action-Game ist, und Among Us der Strategie zugewiesen werden könnte. Die Statistik spricht sehr für Fortnite und andere Action-Spiele, vermutlich weil Battle-Royale ein darunter sehr beliebtes Subgenre ist.
 
